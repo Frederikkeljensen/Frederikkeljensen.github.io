@@ -24,7 +24,7 @@
 }
 
 h1 {
-    font-family: 'Chewy', cursive;
+    font-family: 'Chewy';
     font-size: var(--fontSizeXLarge);
     color: var(--font-color);
 }
