@@ -1,9 +1,9 @@
 :root {
     /* Farver */
-    --font-color: #1f1e1e;
-    --header-color: #8BB2D7;
-    --footer-color: #8BB2D7;
-    --background-color: #768FBD;
+    --font-color: #111010;
+    --header-color: #97B0FF;
+    --footer-color: #97B0FF;
+    --background-color: #7687FF;
     --button-color: rgb(241, 236, 236);
     --buttonBorder-color: #86bcad;
 
@@ -24,7 +24,7 @@
 }
 
 h1 {
-    font-family: 'Merienda One', cursive;
+    font-family: 'Chewy', cursive;
     font-size: var(--fontSizeXLarge);
     color: var(--font-color);
 }
@@ -112,7 +112,7 @@ a {
 }
 
 .header ul a:hover {
-    background-color: #a3c3e0;
+    background-color: #a8beff;
 }
 
 /* header- logo */

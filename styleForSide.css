@@ -38,7 +38,7 @@ a {
 }
 
 .header ul a:hover {
-    background-color: #a3c3e0;
+    background-color: #97B0FF;
 }
 
 /* header- logo */
@@ -372,7 +372,7 @@ p {
     .info__picture {
         display: grid;
         grid-template-columns: 8fr 2fr;
-        background-color: rgba(224, 213, 175, 0.79);
+        background-color: #FFEEF2;
     }
 
     .pictureMe-img {
