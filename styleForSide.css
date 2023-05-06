@@ -37,10 +37,6 @@ a {
     transition: 0.4s;
 }
 
-.header ul a:hover {
-    background-color: #97B0FF;
-}
-
 /* header- logo */
 .header .logo {
     width: auto;
