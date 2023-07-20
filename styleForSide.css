@@ -327,7 +327,7 @@ p {
     .info__picture {
         display: grid;
         grid-template-columns: 2.5fr 1fr;
-        background-color: rgba(224, 213, 175, 0.79);
+        background-color: #415F96;
     }
 
     .pictureMe-img {
@@ -368,7 +368,7 @@ p {
     .info__picture {
         display: grid;
         grid-template-columns: 8fr 2fr;
-        background-color: #FFEEF2;
+        background-color: #415F96;
     }
 
     .pictureMe-img {

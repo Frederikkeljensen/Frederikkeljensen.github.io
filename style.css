@@ -1,9 +1,9 @@
 :root {
     /* Farver */
     --font-color: #111010;
-    --header-color: #97B0FF;
-    --footer-color: #97B0FF;
-    --background-color: #768FBD;
+    --header-color: #99ADD3;
+    --footer-color: #99ADD3;
+    --background-color: #5873A6;
     --button-color: rgb(241, 236, 236);
     --buttonBorder-color: #86bcad;
 
@@ -112,7 +112,7 @@ a {
 }
 
 .header ul a:hover {
-    background-color: #a7b3d8;
+    background-color: #bdcbe5;
 }
 
 /* header- logo */
