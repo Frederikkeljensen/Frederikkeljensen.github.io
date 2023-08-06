@@ -18,7 +18,21 @@ h4 {
     padding-left: 2rem;
 }
 
+.myProject {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+}
+
 .myProject__img {
+    display: grid;
+    padding-left: 1rem;
+}
+
+.projectLogo {
+    display: grid;
+    width: 40vh;
+    height: 40vh;
     padding-left: 1rem;
 }
 
