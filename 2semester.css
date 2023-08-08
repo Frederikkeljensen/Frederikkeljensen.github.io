@@ -24,7 +24,7 @@ a {
 
 .myProject {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100vw;
 }
 
@@ -281,10 +281,9 @@ a {
         width: 50%;
     }
 
-    .school__project {
+    .myProject {
         display: grid;
-        grid-template-columns: 1fr;
-
+        grid-template-columns: 1fr 1fr;
     }
 
     .upperFooter {
