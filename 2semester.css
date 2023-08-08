@@ -11,29 +11,30 @@ body {
 }
 
 h2 {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 h4 {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .myProject {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100vw;
+}
+
+.project {
+    display: grid;
+    justify-items: center;
 }
 
 .myProject__img {
     display: grid;
-    padding-left: 1rem;
-}
-
-.projectLogo {
-    display: grid;
-    width: 40vh;
-    height: 40vh;
-    padding-left: 1rem;
+    justify-items: center;
+    width: 50vh;
+    height: 50vh;
+    padding-bottom: 30px;
 }
 
 .slider {
@@ -138,6 +139,7 @@ h4 {
 .counter {
     padding-left: 1rem;
     width: 90%;
+    padding-bottom: 50px;
 }
 
 .counter__header {
