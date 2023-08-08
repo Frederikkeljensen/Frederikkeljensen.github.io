@@ -277,71 +277,49 @@
 
         <h2>Loops</h2>
         <p>
-            Loops tilbyder en hurtig og nem måde at gøre noget gentagne gang.
-            Du kan tænke på en loop som en computeriseret version af spillet, hvor du fortæller nogen om at tage X
-            skridt i én retning, og derefter Y trin i en anden.
-            For eksempel kunne ideen "Gå fem trin mod øst" udtrykkes på denne måde som en løkke.
+            I programmering refererer "loops" til en måde at udføre gentagne handlinger eller udføre en bestemt blok af
+            kode flere gange, indtil en bestemt betingelse er opfyldt. Loops giver dig mulighed for at undgå at gentage
+            den samme kode manuelt flere gange, hvilket gør din kode mere effektiv og struktureret.
+        </p>
 
-            Der er mange forskellige slags loops, men de gør alle i det væsentlige det samme: de gentager en handling et
-            antal gange. (Bemærk, at det er muligt, at tallet kan være nul!)
-        </p>
         <p>
-            De forskellige løkkemekanismer tilbyder forskellige måder at bestemme start- og slutpunkterne for løkken.
-            Der er forskellige situationer, der lettere betjenes af én type loop frem for de andre.
-        </p>
-        <p>
-            Udtalelserne for loops, der leveres i JavaScript er:
+            Der er forskellige typer loops i JavaScript, og de mest almindelige er:
         </p>
 
         <h4>
-            for statement
+            For loop:
         </h4>
         <p>
-            A for loop gentages, indtil en specificeret betingelse evalueres til falsk. JavaScript for
-            loop ligner Java og C for loop.
+            En "for loop" udfører en kodeblok et bestemt antal gange, og det er nyttigt, når du kender antallet af
+            gentagelser på forhånd. Dette er den mest almindelige type loop.
         </p>
 
         <h4>
-            do...while statement
+            While loop:
         </h4>
         <p>
-            Do...while-sætningen gentages, indtil en specificeret betingelse evalueres til falsk.
+            En "while loop" udfører en kodeblok, så længe betingelsen er sand. Dette betyder, at antallet af gentagelser
+            ikke er kendt på forhånd.
         </p>
 
         <h4>
-            while statement
+            Do-While loop:
         </h4>
         <p>
-            En while-sætning udfører sine udsagn, så længe en specificeret betingelse evalueres til
-            sand.
+            En "do-while loop" fungerer ligesom en while loop, men den sikrer, at kodeblokken udføres mindst én gang,
+            før betingelsen evalueres.
         </p>
 
-        <h4>
-            break statement
-        </h4>
         <p>
-            Brug break-sætningen til at afslutte en loop, switch eller i forbindelse med en mærket
-            sætning.
-            Når du bruger break uden en etiket, afslutter den det inderste omsluttende while, do-while, for eller switch
-            øjeblikkeligt og overfører kontrollen til følgende sætning.
-            Når du bruger break med en etiket, afslutter det den angivne mærkede sætning.
+            Det er vigtigt at sikre, at dine loops har en måde at afslutte på, så du undgår uendelige loops, der kan få
+            din kode til at køre i en uendelig løkke. Det kan føre til, at din applikation fryser eller går ned.
         </p>
 
-        <h4>
-            for...in statement
-        </h4>
         <p>
-            For...in-sætningen itererer en specificeret variabel over alle de talrige egenskaber
-            for et objekt. For hver enkelt egenskab udfører JavaScript de angivne udsagn.
-        </p>
-
-        <h4>
-            for...of statement
-        </h4>
-        <p>
-            For...of-sætningen opretter en løkke, der itererer over iterable objekter (inklusive
-            Array, Map, Set, arguments-objekt og så videre), og påkalder en tilpasset iterationshook med sætninger, der
-            skal udføres for værdien af ​​hver særskilt egenskab.
+            Loops er et kraftfuldt koncept i programmering og kan bruges til at forenkle gentagne opgaver, som f.eks. at
+            behandle lister af data eller udføre operationer på samlinger af elementer. Sørg altid for at forstå,
+            hvordan betingelsen fungerer, så du undgår uendelige loops og sikrer, at din kode udfører de nødvendige
+            opgaver korrekt.
         </p>
 
         <h2>Mit ejet eksempel</h2>
