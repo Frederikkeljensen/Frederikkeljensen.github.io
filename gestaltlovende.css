@@ -18,7 +18,7 @@ p {
 
 .gestaltLovende-img {
     padding-bottom: 2rem;
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
     margin: auto;
@@ -178,6 +178,10 @@ p {
 @media screen and (min-width: 1025px) {
     .header .img-logo {
         height: 60px;
+    }
+
+    .gestaltLovende-img {
+        width: 70%;
     }
 
     .button__action {
