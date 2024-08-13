@@ -5,6 +5,41 @@ body {
 
 /* body */
 
+.text {
+    text-align: center;
+    padding-left: 0rem;
+}
+
+h2 {
+    padding-left: 1rem;
+}
+
+h4 {
+    padding-left: 1rem;
+}
+
+a {
+    display: block;
+}
+
+.myProject {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+}
+
+.project {
+    display: grid;
+    justify-items: center;
+}
+
+.myProject__img {
+    display: grid;
+    justify-items: center;
+    width: 60vh;
+    height: 45vh;
+    padding-bottom: 30px;
+}
 
 /* footer */
 .upperFooter {
