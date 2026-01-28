@@ -1,11 +1,11 @@
 :root {
     /* Farver */
-    --font-headercolor: #020202;
-    --font-pcolor: #151414;
-    --font-labelcolor: #1e1e1e;
-    --header-color: #d3d6d7;
-    --footer-color: #d3d6d7;
-    --background-color: rgb(195, 195, 195);
+    --font-color: #1f1e1e;
+    --header-color: #8BB2D7;
+    --footer-color: #8BB2D7;
+    --background-color: #768FBD;
+    --button-color: rgb(241, 236, 236);
+    --buttonBorder-color: #86bcad;
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -24,39 +24,64 @@
 }
 
 h1 {
-    font-family: monospace;
-    color: var(--font-headercolor);
-    margin-left: var(--spaceXLarge);
-    margin-top: var(--spaceLarge);
+    font-family: 'Merienda One', cursive;
+    font-size: var(--fontSizeXLarge);
+    color: var(--font-color);
 }
 
 h2 {
-    font-family: monospace;
-    color: var(--font-headercolor);
-    margin-left: var(--spaceXLarge);
+    font-family: 'Merienda One', cursive;
+    font-size: var(--fontSizeLarge);
+    color: var(--font-color);
 }
 
 h3 {
-    color: var(--font-labelcolor);
+    font-family: 'Merienda One', cursive;
+    font-family: 'Yuji Mai', serif;
+    font-size: var(--fontSizeLarge);
+    color: var(--font-color);
+}
+
+h4 {
+    font-family: 'Merienda One', cursive;
+    font-size: var(--fontSizeMedium);
+    color: var(--font-color);
 }
 
 p {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Chilanka', cursive;
     color: var(--font-color);
-    line-height: 25px;
-    margin-left: var(--spaceXLarge);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--spaceSmall);
+}
+
+.button__action {
+    background-color: var(--buttonBorder-color);
+    border-radius: 20vh;
+    border: thin solid black;
+    height: 3.5rem;
+    width: 40%;
+    color: var(--font-color);
+    font-size: var(--fontSizeMedium);
+    font-family: 'Merienda One', cursive;
+    font-family: 'Yuji Mai', serif;
 }
 
 body {
     margin: 0;
-    background-color: var(--background-color);
-    width: 100%;
+    background-color: var(--background-color)
 }
 
 a {
-    font-family: monospace;
+    font-family: "Bebas Neue";
     font-weight: 300;
     text-align: center;
-    color: var(--font-headercolor);
+    color: var(--font-color);
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -87,18 +112,18 @@ a {
 }
 
 .header ul a:hover {
-    background-color: #b9bbbc;
+    background-color: #a3c3e0;
 }
 
 /* header- logo */
-
-.header .img-logo {
-    height: auto;
-    width: 115px;
-    padding: 5px;
+.header .logo {
+    width: auto;
+    margin: 2px;
+    padding: 15px;
     float: right;
     display: block;
     font-size: 2em;
+
 }
 
 /* header- hamburger-menu */
@@ -118,7 +143,7 @@ a {
 
 /* header- hamburger- menu/ stregerne */
 .header .menu-icon .nav-icon {
-    background: var(--font-headercolor);
+    background: black;
     display: block;
     height: 2px;
     width: 18px;
@@ -127,7 +152,7 @@ a {
 }
 
 .header .menu-icon .nav-icon:before {
-    background: var(--font-headercolor);
+    background: black;
     content: "";
     display: block;
     height: 100%;
@@ -138,7 +163,7 @@ a {
 }
 
 .header .menu-icon .nav-icon::after {
-    background: var(--font-headercolor);
+    background: black;
     content: "";
     display: block;
     height: 100%;
@@ -172,174 +197,88 @@ a {
     top: 0;
 }
 
-/* instagramTrends underside */
-.instagram-guide__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 135px;
-}
-
-.instagram-guide__item {
-    border-radius: 15px;
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 10px;
-    /* Sikrer afstand mellem billede og tekst */
-}
-
-.instagram-guide__item img {
-    width: 100%;
-    height: 210px;
-    /* Fast højde for alle billeder */
-    object-fit: cover;
-    /* Sikrer at billeder bevarer deres proportioner */
-}
-
-.instagram-guide__title {
-    padding: 10px;
-    margin: 0;
-    background-color: #DFDEEE;
-    border-radius: 50px;
-    font-size: var(--fontSizeMedium);
-    font-family: monospace;
-    text-align: center;
-}
-
-/* Instagram Guide - sektioner */
-.instagram-guide {
+/* footer */
+.upperFooter {
     display: grid;
     grid-template-columns: 1fr;
-    /* 1 kolonne */
-    gap: 30px;
-    /* Afstand mellem sektioner */
-    margin-left: var(--spaceXLarge);
-}
-
-.instagram-guide__section {
-    background-color: #ded9d9;
-    font-size: var(--fontSizeMedium);
-    font-family: monospace;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 800px;
-    /* Begræns maksimal bredde på sektionerne */
-    margin: 0;
-    /* Ingen margin for at sikre venstre justering */
-    border: 1px solid #ccc;
-    /* Valgfri: Tilføj en grå kant for visuel adskillelse */
-}
-
-.instagram-guide__section li {
-    padding-bottom: 15px;
-    list-style: none;
-}
-
-.instagram-guide__section img {
-    width: 100%;
-    /* Billederne fylder nu hele containerens bredde */
-    max-width: 350px;
-    /* Reducerer maksimal bredde til 80% af containerens bredde */
-    height: auto;
-    /* Bevarer billedets proportioner */
-    padding-bottom: 15px;
-    /* Afstand til elementerne nedenfor */
-}
-
-#section1 .instagram-guide__section img {
-    max-width: 90px;
-    /* Maksimal bredde for billeder i section1 */
-}
-
-#section3 .instagram-guide__section img {
-    height: 900%;
-    /* Maksimal bredde for billeder i section3 */
-}
-
-.instagram-guide__section-image {
-    width: 100%;
-    max-width: none;
-    /* Ingen begrænsning på størrelsen */
-}
-
-.instagram-guide__section p {
-    margin: 0;
-    /* Fjern standard margin fra p- og ul-elementer */
-    padding: 10px 0;
-    /* Polstring omkring teksten */
-}
-
-.instagram-guide__hashtags-list {
-    text-align: center;
-}
-
-.instagram-guide__hashtag {
-    text-align: center;
-}
-
-.instagram-guide__section ul {
-    padding-left: 20px;
-    /* Indryk listepunkterne */
-    list-style: none;
-}
-
-.instagram-guide__reels-tip {
-    padding-bottom: 5px;
-    padding-top: 15px;
-}
-
-/* Design Tools underside */
-.tools {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    background-color: var(--footer-color);
     justify-items: center;
-    /* Centrer elementer horisontalt */
-    align-items: center;
-    /* Centrer elementer vertikalt */
-    padding-top: 20px;
+    width: 100vw;
 }
 
-.tools__image {
-    display: block;
-    margin: 0 auto;
-    /* Centrer billedet horisontalt */
+.underFooter {
+    background-color: var(--footer-color);
+    font-family: "Bebas Neue";
+    font-weight: 300;
     text-align: center;
-    max-width: 150px;
-    /* Valgfrit: sæt en maksimal bredde */
-    padding-left: 10%;
+    padding: 0.5rem;
+    color: var(--font-color);
 }
 
-.tools__name {
+/* footer__links */
+
+/* footer__links-menu */
+.footer__links {
+    color: var(--footer-color);
+    list-style: none;
     text-align: center;
-    /* Centrer teksten */
-    margin-top: 10px;
+    font-size: 1rem;
 }
 
-.tools__description {
-    margin-top: 10px;
-    /* Plads mellem navnet og beskrivelsen */
+.footer__links li {
+    padding: 0.5rem;
+}
+
+.footer__links li a {
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.footer__links li a:hover {
+    opacity: 40%;
+}
+
+.footer__links li a:hover {
+    opacity: 40%;
+}
+
+/* footer__socialMedia-icon */
+.footer__socialMedia {
+    color: var(--font-color);
+    list-style: none;
     text-align: center;
-    /* Center teksten */
-    max-width: 300px;
-    /* Valgfri: begræns bredden af beskrivelsen for bedre læsbarhed */
+    font-size: 1.5rem;
 }
 
-.tools__highlight {
-    font-weight: bold;
-    /* Make the text bold */
+.footer__socialMedia li {
+    padding: 0.5rem;
 }
 
-/* Hashtag Usage underside */
-.hashtag-section {
-    padding: 20px;
+.footer__socialMedia li a {
+    opacity: 100%;
+    transition: 0.4s;
 }
 
-.hashtag-section__title {
-    font-size: 1.5em;
-    margin-top: 20px;
+.footer__socialMedia li a:hover {
+    opacity: 40%;
+}
+
+.footer__socialMedia img {
+    width: 50px;
+    padding: 0 0.5rem;
+}
+
+.footer__socialMedia li {
+    display: inline-block;
+}
+
+.footer__socialMedia li a {
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.footer__socialMedia li a:hover {
+    opacity: 40%;
 }
 
 /* mobil-størrelse, med header-menu */
@@ -362,20 +301,45 @@ a {
     }
 }
 
+/* tablet-størrelse */
+@media screen and (min-width:749px) and (min-width:1024px) {
+    .header .img-logo {
+        height: 60px;
+    }
+
+    .button__action {
+        height: 3.5rem;
+        width: 25%;
+    }
+
+    .upperFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--footer-color);
+        justify-items: center;
+    }
+
+    .footer__links li {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+
+}
+
 /* computer-størrelse */
 @media screen and (min-width: 1025px) {
     .header .img-logo {
         height: 60px;
     }
 
-    .pictureMe-img {
-        width: 300px;
-        height: auto;
+    .button__action {
+        height: 3.5rem;
+        width: 15%;
     }
 
     .upperFooter {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         background-color: var(--footer-color);
         justify-items: center;
     }
